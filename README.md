@@ -34,6 +34,9 @@ You may also see any lint errors in the console.
 <p>3)Componentes: organização do site dividida em componentes React</p>
 <p>4)Regexp: uso de expressões regexp para validação</p>
 <p>5)Eventos React: controle de eventos do React, como onChange e onBlur - para input e onSubmit - para o formulário</p>
+<p>6)Validação dinâmica, de acordo com o tipo de dado informado no momento de instanciar o Hook</p>
 
-![home](https://user-images.githubusercontent.com/74941958/222609159-ae015c19-79ee-4f43-b5c0-8ced54ba481c.png)
+![validacao_dinamica_feita_por_regexp](https://user-images.githubusercontent.com/74941958/222611069-f29ad584-00c1-42de-b3d4-59f1c0745dd0.png)
+![hooks_e_custom_hooks](https://user-images.githubusercontent.com/74941958/222611076-1736513a-e111-4ffc-99b4-d0933df88a0b.png)
 
+<h1>Acesse a aplicação clicando <a href="https://validador-formularios-hooks-componentes-reactjs.vercel.app/" target="_blank">aqui</a></h1>
