@@ -30,4 +30,5 @@ You may also see any lint errors in the console.
 
 # App 🖼️
 
+![home](https://user-images.githubusercontent.com/74941958/222609159-ae015c19-79ee-4f43-b5c0-8ced54ba481c.png)
 
