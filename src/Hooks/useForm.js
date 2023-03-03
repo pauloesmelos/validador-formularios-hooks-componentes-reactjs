@@ -7,7 +7,7 @@ const validacoes = {
     },
     nome: {
         regexp: /\D+/,
-        mensagem: '* Digite um nome válido - sem conter dígitos'
+        mensagem: '* Digite um nome sem conter dígitos'
     },
     senha: {
         regexp: /^((\S+)(\D+)?){5,20}$/,
