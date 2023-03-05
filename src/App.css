@@ -37,7 +37,7 @@ h2{
 /**/
 label{
   display: block;
-  font-weight: bolder;
+  font-weight: lighter;
 }
 label::before{
   content: '';
@@ -48,19 +48,19 @@ label::before{
   margin: 1rem .5rem 0 0;
 }
 .button{
-  padding: .6rem .8rem;
+  padding: .8rem .8rem;
   color: #fff;
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  background-color: rgb(10, 218, 72);
+  background: linear-gradient(90deg, rgb(10, 218, 72) 50%, rgb(10, 177, 10) 100%);
   margin: 3rem auto 0 auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .button:hover{
-  opacity: .7;
-  transform: scale(1.1);
+  background: linear-gradient(90deg, rgb(10, 177, 10) 50%, rgb(10, 218, 72) 100%);
+  transform: scale(1);
 }
 .application{
   text-align: center;
@@ -68,7 +68,15 @@ label::before{
 .erro{
   margin: 1rem 0 1rem 0;
   color: rgb(243, 117, 101);
-  position: absolute;
+}
+.exclamacao{
+  padding: .4rem;
+  font-size: .7rem;
+  background-color: #e74c3c;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 50%;
+  margin-right: .5rem;
 }
 /*form*/
 input{
@@ -87,29 +95,18 @@ form{
   border-radius: 5px;
   box-shadow: .1rem .3rem .5rem .3rem rgb(173, 173, 173);
 }
-.inputs{
-  display: flex;
-  justify-content: center;
-}
-.d2{
-  margin-left: 3rem;
-}
-.d1 label:nth-child(2n),.d2 label:nth-child(2n){
-  margin-top: 3rem;
-}
 .mensagem-formulario{
   margin-top: 2rem;
 }
 /*footer*/
 footer{
   width: 100%;
-  margin: 0;
-  bottom: 0;
-  position: fixed;
+  margin-top: 8rem;
   padding: 1rem;
   background-color: #333;
   color: #fff;
   font-weight: bolder;
+  box-sizing: border-box;
 }
 footer p a{
   color:rgb(10, 218, 72);
