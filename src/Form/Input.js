@@ -1,5 +1,4 @@
 import React from 'react';
-import InputMask from 'react-input-mask';
 const Input = ({label,id,value,onChange,onBlur,erro,getMascara,...props}) => {
   const mascara = getMascara();
   return (
