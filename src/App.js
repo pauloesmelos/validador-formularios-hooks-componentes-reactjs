@@ -17,10 +17,10 @@ const App = () => {
   const telefone = useForm('telefone');//telefone
 
   const vazio = () => {
-    return cep.valor.length === 0 || nome.valor.length === 0 || senha.valor.length === 0 || email.valor.length === 0;
+    return cep.valor.length === 0 || nome.valor.length === 0 || senha.valor.length === 0 || email.valor.length === 0 || telefone.valor.length === 0;
   };
   const erro = () => {
-    return cep.erro || nome.erro || senha.erro || email.erro;
+    return cep.erro || nome.erro || senha.erro || email.erro || telefone.erro;
   };
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -55,7 +55,7 @@ const App = () => {
               <Input type="text" placeholder="Digite seu nome" id="nome" label="Nome" onChange={nome.onChange} value={nome.valor} onBlur={nome.onBlur} erro={nome.erro} getMascara={nome.getMascara}/>
               <Input type="password" placeholder="Digite sua senha" id="senha" label="Senha" onChange={senha.onChange} value={senha.valor} onBlur={senha.onBlur} erro={senha.erro} getMascara={senha.getMascara}/>
               <Input type="email" placeholder="Digite seu email" id="email" label="Email" onChange={email.onChange} value={email.valor} onBlur={email.onBlur} erro={email.erro} getMascara={email.getMascara} />
-              <Input type="text" placeholder="00000-000" id="cep" label="Cep" onChange={cep.onChange} value={cep.valor} onBlur={cep.onBlur} erro={cep.erro} getMascara={cep.getMascara} />
+              <Input type="text" placeholder="00000-000" id="cep" label="CEP" onChange={cep.onChange} value={cep.valor} onBlur={cep.onBlur} erro={cep.erro} getMascara={cep.getMascara} />
               <Input type="text" placeholder="Digite seu telefone" id="telefone" label="Telefone" onChange={telefone.onChange} value={telefone.valor} onBlur={telefone.onBlur} erro={telefone.erro} getMascara={telefone.getMascara} />
           </div>
           <Button content="Concluir Cadastro" className="button" />

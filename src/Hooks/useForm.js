@@ -22,7 +22,7 @@ const validacoes = {
         mascara: ''
     },
     telefone: {
-      regexp: /(\+?55\s?)?(\()?\d{2}(\))?[\s-]?\d{2,5}[-\s]?\d{1,4}/g,
+      regexp: /^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/,
       mensagem: 'Digite um telefone válido',
       mascara: ''
     }
@@ -47,9 +47,27 @@ const useForm = (tipo) => {
     }
     return boolean;
   };
+  const mascaraTelefone = (expressao) => {//mascara input telefone
+    console.log(expressao.length);
+    switch(expressao.length){
+      case 1:
+        setValor(`(${expressao}`);
+        break;
+      case 3:
+        setValor(`${expressao})`);
+        break;
+      case 9:
+        setValor(`${expressao}-`);
+        break;
+      case 15: break;
+      default:
+        setValor(expressao);
+        break;
+    }
+  };
   const onChange = (event) => {
     const {value} = event.target;
-    setValor(value);
+    tipo === 'telefone' ? mascaraTelefone(value) : setValor(value);
     if(erro)
       validar(value);
   }
